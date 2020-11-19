@@ -1,23 +1,23 @@
- 
-import java.util.Scanner; 
- 
-public class Challenge { 
- 
-	public static void main(String args[]) { 
-		Scanner scanner = new Scanner(System.in); 
-		System.out.println("What is your name: "); 
-		String name = scanner.next();
-		String echo = ""; 
-		///{ 
-	 
-		//start your coding here  
-     
-        //echo = "Hello "+name;
-           
+import java.io.*;
+import java.util.Scanner;
+class Challenge {
 
-		///}   
- 
-                System.out.println(echo);
-                scanner.close();
-	} 
-} 
+	public static void main(String a[]) throws Exception
+	{
+        String st;      //contains user input statement 
+        String reverse = ""; //will contain reverse characters of the given string
+       BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+       System.out.println("Enter the Statement:"); 
+         st=br.readLine();
+        System.out.println("The reverse is:");
+
+        /*  Uncomment this solution code 
+        for(int i = st. length() - 1; i >= 0; i--) {
+        reverse = reverse + st.charAt(i);
+        } 
+        */ 
+        System.out.println(reverse);
+ 	 
+        }  
+   
+}
